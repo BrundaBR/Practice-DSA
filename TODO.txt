@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TODO
+linkedlist in python
+1. search in linked list
+2. delete in linked list 
+3. delete at a position n from back
+4. add dictionary on linked list and find repeated values
+5. floyd cycle dectetion theroy
+6.apply floyd theory
+7. partition problem 
+8. ..
+
+
+
