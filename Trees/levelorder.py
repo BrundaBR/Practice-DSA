@@ -60,6 +60,12 @@ def search(root,val):
 			break
 	return False
 
+def preorder():
+	pass
+def inorder():
+	pass
+def postorder():
+	pass
 
 instance=BinaryTree()
 instance.insert(2)

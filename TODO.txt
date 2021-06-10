@@ -1,31 +1,6 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-TODO For freshworks
-1. Arrays
--two sum 
-2. strings
-3.stack and queue
-4.linkedlist
-5. tree
-
-
+TODO
+1. Array medium
+2. stack and queue medium 
+3. linked list easy
+4. 
