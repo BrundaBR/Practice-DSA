@@ -1,6 +1,6 @@
 
 TODO
-1. Array medium
-2. stack and queue medium 
-3. linked list easy
-4. 
+----Linked List------
+1. deleting head
+2. deleting middle ele
+3.swap 
