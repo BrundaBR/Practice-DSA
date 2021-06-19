@@ -1,6 +1,8 @@
 
 TODO
 ----Linked List------
-1. deleting head
-2. deleting middle ele
-3.swap 
+1. deleting head DONE
+2. deleting middle ele DONE
+3.swap v-1 DONE
+4. swap v-2 DONE
+5.Merge sort DONE
