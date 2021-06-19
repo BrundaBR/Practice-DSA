@@ -15,7 +15,7 @@ class DoublyLinkedList:
 			self.head=new_node
 		else:
 			cur=self.head
-			while cur:
+			while cur.next:
 				cur=cur.next
 			cur.next=new_node
 			new_node.prev=cur
@@ -40,20 +40,36 @@ class DoublyLinkedList:
 	def add_before(self,val):
 		cur=self.head
 		new_node=ListNode(val)
-		if cur.prev is None and cur.val==val:
-			cur.prev=new_node
-			new_node.next=cur
-			self.head=new_node
-			return
-		elif cur and cur.val==val:
-			new_node.prev=cur.prev
-			cur.prev=new_node
-			new_node.next=cur
+		while cur:
+			if cur.prev is None and cur.val==val:
+				self.prepend(val)
+			elif  cur.val==val:
+				prev=cur.prev
+				cur.prev=new_node
+				new_node.next=cur
+				new_node.prev=prev
+			cur=cur.next
 			
 
 
 	def add_after(self,val):
-		pass
+		#prepend is after
+		
+		cur=self.head
+		while cur:
+				# for 1 element
+			if cur.next is None and  cur.val==val:
+				self.append(val)
+			elif cur.val==key:
+				new_node=ListNode(val)
+				nxt=cur.next #save
+				cur.next=new_node
+				new_node.prev=cur
+				new_node.next=nxt
+				nxt.prev=new_node
+				return 
+			cur=cur.next
+
 			
 
 
@@ -67,4 +83,4 @@ instance.append(3)
 instance.append(4)
 instance.append(5)
 
-instance.display()
+# instance.display()
