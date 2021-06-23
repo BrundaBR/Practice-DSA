@@ -56,6 +56,8 @@ def inorder(root):
 		
 
 
+
+
 instance=BST()
 instance.insert(1)
 instance.insert(2)

@@ -35,13 +35,26 @@ def levelorder(root):
 	while q!=[]:
 
 		val=q.pop(0)
-		# result.append([val.info])
+		result.append(val.info)
 
 		if val.left:
 			q.append(val.left)
 		if val.right:
 			q.append(val.right)
 	print(result)
+
+
+
+def reverselevelorder(root):
+
+	stack=[root]
+	while stack!=[]:
+		val=stack.pop()
+		print(val.info,end=" ")
+		if val.left:
+			stack.append(val.left)
+		if val.right:
+			stack.append(val.right)
 
 
 def search(root,val):
@@ -73,6 +86,6 @@ instance.insert(5)
 instance.insert(7)
 instance.insert(21)
 instance.insert(9)
-# levelorder(instance.root)
-search(instance.root,9)
-
+levelorder(instance.root)
+# search(instance.root,9)
+reverselevelorder(instance.root)
