@@ -1,8 +1,15 @@
 
-TODO
-----Linked List------
-1. deleting head DONE
-2. deleting middle ele DONE
-3.swap v-1 DONE
-4. swap v-2 DONE
-5.Merge sort DONE
+Pre-requisites
+1. Binary search algorithm
+first=0
+last=len(arr)-1
+run a loop till first is less than last
+usually mid is first +last//2
+but due to indexing after mid will have issues 
+mid = (last-first )+first//2
+
+if number found return number
+after mid if number to find > mid :number lies after mid+1
+
+so set first to mid 
+otherwise set last to mid

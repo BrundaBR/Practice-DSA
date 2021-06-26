@@ -30,11 +30,30 @@ class BST:
 				else:
 					break
 			return
+	
+	def helper(self,root,res,path):
+		res=[]
+		if root==None:
+			return
+		path.append(root.val)
+		if root.left==None and root.right==None:
+			res.append(path)
+		self.helper(root.left,res,path)
+		self.helper(root.right,res,path)
+		path.pop()
+		
+
+
+	def allpaths(self,root):
+		self.res=[]
+		self.path=[]
+		self.helper(root,self.res,self.path)
+		return self.res
 
 
 
-def height(root):
-	pass
+
+
 
 
 
@@ -45,5 +64,4 @@ instance.insert(5)
 instance.insert(4)
 instance.insert(1)
 instance.insert(3)
-print(height(instance.root))
-
+print(instance.allpaths(instance.root))

@@ -4,3 +4,4 @@ A = sorted(A)
 
 for i in range(len(A)//2):
     print(A[i], A[~i])
+    
