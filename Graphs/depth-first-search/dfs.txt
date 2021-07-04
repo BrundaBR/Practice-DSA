@@ -1,0 +1,15 @@
+-------------------ALGORITHM-----------------
+Step -01 : Create a seen set where elements are already seen
+
+Step -02:Add start to stack
+
+Step -03: Run a while till stack is not empty
+		-pop element from stack
+Step -04: Process node 
+		- if not in seen add to seen
+Step -05:add unseen children children
+		-if node has children 
+			and not in seen
+		add to stack
+Step -06: end
+

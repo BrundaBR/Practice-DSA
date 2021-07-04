@@ -1,12 +1,22 @@
 def dfs_on_graph(adj_list):
-	visited=[]
-	for node in adj_list:
-		if node not in visited:
-			visited.append(node)
-			
+	visited=set()
+	start="A"
+	stack=[start]
+	while stack!=[]:
+		curr=stack.pop()
 
+		#process
+		if curr not in visited:
+			visited.add(curr)
+			print(curr)
+		#add unseen children
+		for k,chil in adj_list.items():
+			if k==curr:
+				for i in chil:	
+					if i not in visited:
+						stack.append(i)
 
-
+	
 adj_list={
 	"A":["B","C"],
 	"B":["A","D"],
